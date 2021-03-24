@@ -37,6 +37,9 @@ a:hover {
 .mb-30px {
   margin-bottom: 30px; }
 
+.mb-45px {
+  margin-bottom: 45px; }
+
 .mb-50px {
   margin-bottom: 50px; }
 
@@ -45,6 +48,10 @@ a:hover {
 
 .pb-30px {
   padding-bottom: 30px; }
+
+.py-50px {
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .h-335-98px {
   height: 381px; }
@@ -455,7 +462,7 @@ button.btn-black {
       font-size: 13px; }
   .san-pham-slide-custom__header__btns {
     display: flex; }
-    .san-pham-slide-custom__header__btns button {
+    .san-pham-slide-custom__header__btns a {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -463,11 +470,12 @@ button.btn-black {
       width: 30px;
       background-color: transparent;
       border: 1px solid #acacac;
-      border-radius: 0; }
-      .san-pham-slide-custom__header__btns button:hover {
+      border-radius: 0;
+      color: #acacac; }
+      .san-pham-slide-custom__header__btns a:hover {
         background-color: #202020;
         border-color: #202020; }
-        .san-pham-slide-custom__header__btns button:hover i {
+        .san-pham-slide-custom__header__btns a:hover i {
           color: #fff; }
 
 .banner {
@@ -500,6 +508,25 @@ button.btn-black {
 
 .san-pham-noi-bat {
   padding: 30px 0; }
+
+.logos {
+  padding: 30px;
+  background-color: #f7f7f7; }
+  .logos .img-wrapper {
+    display: flex;
+    justify-content: center; }
+    .logos .img-wrapper img {
+      height: 90px;
+      width: auto; }
+  .logos .carousel-control-prev {
+    left: -10%; }
+    .logos .carousel-control-prev-icon {
+      background-image: url("../assets/images/right-arrow.svg");
+      transform: rotate(180deg); }
+  .logos .carousel-control-next {
+    right: -10%; }
+    .logos .carousel-control-next-icon {
+      background-image: url("../assets/images/right-arrow.svg"); }
 
 .form-dang-ky {
   position: relative;
@@ -535,6 +562,14 @@ button.btn-black {
     height: 100%;
     width: 100%;
     background-color: #0000006b; }
+
+@media (min-width: 576px) {
+  .logos {
+    padding: 30px;
+    background-color: #f7f7f7; }
+    .logos .img-wrapper {
+      display: flex;
+      justify-content: space-between; } }
 
 @media (min-width: 992px) {
   .banner__list__item {
