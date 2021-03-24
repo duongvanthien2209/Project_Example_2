@@ -79,10 +79,6 @@ a:hover {
   height: 381px;
 }
 
-.shadow {
-  box-shadow: 0 0 10px $shadow;
-}
-
 .shadow-hover {
   box-shadow: 0 0 5px $shadow;
   transition: all 0.3s ease-out;

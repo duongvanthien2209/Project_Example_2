@@ -41,9 +41,25 @@ block content
         .san-pham-noi-bat__header.san-pham-slide-custom__header
           +slide-custom-header(headerSlide[0])
           .san-pham-slide-custom__header__btns
-            button.btn.mr-1 
+            //- 1
+            a.btn.mr-1.d-md-none(href='#carouselExampleControls1', role='button', data-slide='prev')
               i.fas.fa-caret-left
-            button.btn 
+            a.btn.d-md-none(href='#carouselExampleControls1', role='button', data-slide='next') 
+              i.fas.fa-caret-right
+            //- 2
+            a.btn.mr-1.d-none.d-md-flex.d-lg-none(href='#carouselExampleControls2', role='button', data-slide='prev')
+              i.fas.fa-caret-left
+            a.btn.d-none.d-md-flex.d-lg-none(href='#carouselExampleControls2', role='button', data-slide='next') 
+              i.fas.fa-caret-right
+            //- 3
+            a.btn.mr-1.d-none.d-lg-flex.d-xl-none(href='#carouselExampleControls3', role='button', data-slide='prev')
+              i.fas.fa-caret-left
+            a.btn.d-none.d-lg-flex.d-xl-none(href='#carouselExampleControls3', role='button', data-slide='next') 
+              i.fas.fa-caret-right
+            //- 4
+            a.btn.mr-1.d-none.d-xl-flex(href='#carouselExampleControls4', role='button', data-slide='prev')
+              i.fas.fa-caret-left
+            a.btn.d-none.d-xl-flex(href='#carouselExampleControls4', role='button', data-slide='next') 
               i.fas.fa-caret-right
         .row
           .col-12.col-lg-3
@@ -158,7 +174,6 @@ block content
             +custom-carousel-1(danhsachsanpham, 14, 3, 'col-12 col-md-6 col-lg-4 col-xl-3 h-335-98px', false, true)
             +custom-carousel-1(danhsachsanpham, 15, 4, 'col-12 col-md-6 col-lg-4 col-xl-3 h-335-98px', false, true)
     //- End Of Hang moi ve
-
 
     //- Logos
     section.logos
