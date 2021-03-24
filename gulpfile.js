@@ -30,8 +30,11 @@ function assetsTask() {
 
 function serve() {
   browserSync.init({ server: { baseDir: "./dist" } });
-  watch(FilesPath.sassFiles, sassTask);
-  watch(FilesPath.htmlFiles, htmlTask);
+  // watch(FilesPath.sassFiles, sassTask);
+  // watch(FilesPath.htmlFiles, htmlTask);
+
+  watch("src/scss/**/*.scss", sassTask);
+  watch("src/pug/**/*.pug", htmlTask);
 }
 
 exports.sass = sassTask;
