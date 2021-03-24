@@ -45,8 +45,37 @@
         </div>
       </section>
       <nav class="navbar-header navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-          <button class="navbar-header__toggle navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="bar"> </span><span class="bar"> </span><span class="bar">   </span></button><a class="cart order-lg-1" href="#"> <i class="fas fa-shopping-cart fa-lg"></i><span class="cart__badge">0</span></a>
+        <div class="container" style="position: relative;">
+          <button class="navbar-header__toggle navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="bar"> </span><span class="bar"> </span><span class="bar">   </span></button>
+          <div class="dropdown order-lg-1"><a class="cart dropdown-toggle" href="#" id="dropdownMenu1" data-toggle="dropdown"> <i class="fas fa-shopping-cart fa-lg"></i><span class="cart__badge">0</span></a>
+            <div class="dropdown-menu dropdown-menu-right border-0 shadow" aria-labelledby="dropdownMenu1">
+              <div class="cart-item border-bottom"><img src="./assets/images/products/1.png" alt="">
+                <div class="cart-item__content text-center mx-2">
+                  <p class="cart-item__content__title text-uppercase">Máy khoan black decker</p>
+                  <p>
+                     1 x  <span>1.250.000 Đ</span></p>
+                </div><a href="#"> <i class="far fa-times-circle"> </i></a>
+              </div>
+              <div class="cart-item border-bottom"><img src="./assets/images/products/2.png" alt="">
+                <div class="cart-item__content text-center mx-2">
+                  <p class="cart-item__content__title text-uppercase">Máy khoan black decker</p>
+                  <p>
+                     1 x  <span>1.250.000 Đ</span></p>
+                </div><a href="#"> <i class="far fa-times-circle"> </i></a>
+              </div>
+              <div class="cart-item"><img src="./assets/images/products/3.png" alt="">
+                <div class="cart-item__content text-center mx-2">
+                  <p class="cart-item__content__title text-uppercase">Máy khoan black decker</p>
+                  <p>
+                     1 x  <span>1.250.000 Đ</span></p>
+                </div><a href="#"> <i class="far fa-times-circle"> </i></a>
+              </div>
+              <p class="cart-total text-uppercase text-right">Tổng tiền: <span>4.560.000 Đ</span></p>
+              <div class="d-flex justify-content-end margin-bottom-20px padding-right-20px">
+                <button class="btn btn-yellow rounded-0 text-uppercase">Thanh toán</button>
+              </div>
+            </div>
+          </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                   <li class="nav-item active"><a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a></li>
