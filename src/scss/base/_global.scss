@@ -35,6 +35,7 @@ a:hover {
 
 .shadow {
   box-shadow: 0 0 10px $shadow;
+}
 // Grid
 @include grid(3, 2);
 
@@ -56,6 +57,10 @@ a:hover {
 @include margin('bottom', 15, 'px');
 
 @include margin('bottom', 20, 'px');
+
+@include margin('bottom', 30, 'px');
+
+@include margin('top', 30, 'px');
 
 @include margin('bottom', 40, 'px');
 
