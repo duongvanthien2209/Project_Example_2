@@ -29,11 +29,11 @@ header
             
         .main-header__content.d-none.d-lg-block
           span Hotline:
-          p.mb-0 (04) 9500 9650 - (04) 9500 8850
+          p.mb-0 (04) 9500 9650 #{'\x2D'} (04) 9500 8850
             
         .main-header__content.d-none.d-lg-block
           span Hotline: 
-          p.mb-0 (04) 9500 9650 - (04) 9500 8850
+          p.mb-0 (04) 9500 9650 #{'\x2D'} (04) 9500 8850
         .main-header__search
           input(id="search" type="text" placeholder="Tìm kiếm...")
           label(for="search") 
@@ -50,20 +50,6 @@ header
         i.fas.fa-shopping-cart.fa-lg
         span.cart__badge 0
 
-
       #navbarSupportedContent.collapse.navbar-collapse
         ul.navbar-nav.mr-auto
-          li.nav-item.active
-            a.nav-link(href='#')
-              | Trang chủ 
-              span.sr-only (current)
-          li.nav-item
-            a.nav-link(href='#') Giới thiệu
-          li.nav-item
-            a.nav-link(href='#') Sản phẩm
-          li.nav-item
-            a.nav-link(href='#') Tin khuyến mãi
-          li.nav-item
-            a.nav-link(href='#') Dịch vụ
-          li.nav-item
-            a.nav-link(href='#') Liên hệ
+          +navbar__list(navbar)
