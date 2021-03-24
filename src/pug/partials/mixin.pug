@@ -75,8 +75,8 @@ mixin customList({ header, body, products, images, tags }, number, isFixedHeight
           if products
             each product in products
               li.nav-item.active
-                a(class=`nav-link h-100 py-0` href='#')
-                  +product(product, false, false, true)
+                //- a(class=`nav-link h-100 py-0` href='#')
+                +product(product, false, false, true)
           else if images
             each img in images 
               li.nav-item.active
@@ -266,7 +266,7 @@ mixin article(article)
     p.article__doc.mb-0 
       | #{article.doc}
       span 
-        a(href="#") [Đọc tiếp] 
+        a(href="/blog-detail.html") [Đọc tiếp] 
 
 mixin comment(comment, index) 
   div(class= `comment${index%2 !== 0 ? ' padding-left-120px' : ''}`)
