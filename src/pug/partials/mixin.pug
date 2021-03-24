@@ -116,7 +116,7 @@ mixin product(product, lg= false, unhover = false, small =false)
                 i.far.fa-star
               - i++
           span (#{product.danhGia} Đánh giá)
-      if unhover
+        if unhover
           p= product.mota
       div(class= `san-pham__btns${small ? ' d-none' : ''}`)  
         button.btn.btn-yellow.mr-2 Mua ngay
@@ -226,3 +226,13 @@ mixin breadcrumb(arr)
               a(href=item.link)= item.name
           else
             li.breadcrumb-item.active(aria-current='page')= item.name
+
+mixin random-text(text, className= '') 
+  p(class= `${className!=='' ? className : ''}`)
+    | #{text.p1}
+    br
+    | #{text.p2}
+    br
+    | #{text.p3}
+    br
+    | #{text.p3}
