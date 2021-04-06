@@ -1,0 +1,26 @@
+{
+  "name": "bai6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duongvanthien2209/Setup_Gulp_Pug_Sass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/duongvanthien2209/Setup_Gulp_Pug_Sass/issues"
+  },
+  "homepage": "https://github.com/duongvanthien2209/Setup_Gulp_Pug_Sass#readme",
+  "description": ""
+}
