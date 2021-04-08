@@ -16,7 +16,54 @@ header
             li.socials__item.border-right
               a.d-flex-center(href="#") 
                 i.fab.fa-twitter
-        .col-12.col-md-4
+        .col-12.col-sm-4.col-lg-3
           .top-header__btns.h-100
-            a.btn.d-flex-center.border.border-top-0.border-bottom-0(href="#") Đăng kí 
+            a.btn.d-flex-center.border.border-top-0.border-bottom-0(href="#") Đăng ký 
             a.btn.d-flex-center.border-right(href="#") Đăng nhập
+  
+  section.main-header
+    .container
+      .d-flex.flex-column.flex-md-row.align-items-center
+        .main-header__brand.mr-md-auto
+          img(src="./assets/images/logo_2.png", alt="")
+            
+        .main-header__content.d-none.d-lg-block
+          span Hotline:
+          p.mb-0 (04) 9500 9650 - (04) 9500 8850
+            
+        .main-header__content.d-none.d-lg-block
+          span Hotline: 
+          p.mb-0 (04) 9500 9650 - (04) 9500 8850
+        .main-header__search
+          input(id="search" type="text" placeholder="Tìm kiếm...")
+          label(for="search") 
+            i.fas.fa-search
+
+  nav.navbar-header.navbar.navbar-expand-lg.navbar-dark
+    .container
+      button.navbar-header__toggle.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.bar 
+        span.bar 
+        span.bar    
+
+      a(href="#").cart.order-lg-1 
+        i.fas.fa-shopping-cart.fa-lg
+        span.cart__badge 0
+
+
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='#')
+              | Trang chủ 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='#') Giới thiệu
+          li.nav-item
+            a.nav-link(href='#') Sản phẩm
+          li.nav-item
+            a.nav-link(href='#') Tin khuyến mãi
+          li.nav-item
+            a.nav-link(href='#') Dịch vụ
+          li.nav-item
+            a.nav-link(href='#') Liên hệ
