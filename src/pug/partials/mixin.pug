@@ -1,0 +1,25 @@
+mixin navbar__list(list, isFooter = false) 
+  each listItem, index in list
+    if !index && !isFooter
+      li.nav-item.active
+        a.nav-link(href='#')
+          | #{listItem.name} 
+          span.sr-only (current)
+    else
+      li.nav-item
+        a.nav-link(href='#')= listItem.name
+
+mixin footer_component({ title, list }) 
+  h5 
+    img(src="./assets/images/4-black-squares.svg", alt="")
+    | #{title}
+  ul.list-unstyled
+    each listItem in list
+      li
+        if listItem.icon
+          a(href="#") 
+            span.mr-2 
+              i(class= listItem.icon)
+            | #{listItem.name}
+        else
+          a(href="#")= listItem.name
