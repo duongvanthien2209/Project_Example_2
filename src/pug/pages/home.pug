@@ -1,0 +1,61 @@
+extends ../base/base.pug
+
+block content
+  //- Header
+  include ../partials/header.pug
+  //- End Of Header
+  
+  //- Main
+  main
+    //- Banner
+    section.banner.mt-3
+      .container
+        .row 
+          .col-12.col-lg-8.pr-lg-0
+            #carouselExampleIndicators.banner__slide.carousel.slide(data-ride='carousel')
+              ol.carousel-indicators
+                li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+                li(data-target='#carouselExampleIndicators', data-slide-to='1')
+                li(data-target='#carouselExampleIndicators', data-slide-to='2')
+              .carousel-inner
+                .carousel-item.active
+                  img.d-block.w-100(src='./assets/images/SLIDER.jpg', alt='First slide')
+                .carousel-item
+                  img.d-block.w-100(src='./assets/images/SLIDER.jpg', alt='Second slide')
+                .carousel-item
+                  img.d-block.w-100(src='./assets/images/SLIDER.jpg', alt='Third slide')
+          .col-12.col-lg-4.pl-lg-0
+            .banner__list.d-flex.flex-column.border.h-100
+              each bannerItem in banner
+                .banner__list__item
+                  span.mr-3
+                    i.fa-2x(class= `fa\x2D2x ${bannerItem.icon}`)
+                  .banner__list__item__content
+                    h4= bannerItem.title
+                    p.mb-0= bannerItem.text
+    //- End Of Banner
+
+    //- San pham noi bat
+    section.san-pham-noi-bat.san-pham-slide-custom
+      .container 
+        .san-pham-noi-bat__header.san-pham-slide-custom__header
+          h2.mr-auto 
+            span 
+              i.fas.fa-th-large
+            | Sản phẩm nổi bật
+          .san-pham-slide-custom__header__btns
+            button.btn.mr-1 
+              i.fas.fa-caret-left
+            button.btn 
+              i.fas.fa-caret-right
+        .row
+          .col-12.col-lg-3
+            +customList(sanphamnoibat, 1)
+          .col-12.col-lg-6
+    //- End Of San pham noi bat
+  //- End Of Main
+
+
+  //- Footer
+  include ../partials/footer.pug
+  //- End Of Footer

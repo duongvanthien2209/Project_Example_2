@@ -23,3 +23,27 @@ mixin footer_component({ title, list })
             | #{listItem.name}
         else
           a(href="#")= listItem.name
+          
+//- "./assets/images/4-black-squares.svg"
+//- Cấu trúc
+//- { header: { name, icon }, body: [ { name, icon. img } ] } 
+mixin customList({ header, body }, number)
+  .custom-list.navbar.navbar-expand-lg.p-0.shadow
+    .custom-list__header.w-100
+      h2 
+        span
+          i(class= header.icon)
+        | #{header.name}
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent1', aria-controls='navbarSupportedContent1', aria-expanded='false', aria-label='Toggle navigation')
+        img(src="./assets/images/arrow-down-sign-to-navigate.svg", alt="")
+    .custom-list__body.collapse.navbar-collapse.w-100(id= 'navbarSupportedContent' + number)
+      ul.navbar-nav.w-100
+        each val in body
+          li.nav-item.active
+            a.nav-link(href='#')
+              span 
+                if val.icon
+                  i(class= val.icon)
+                if val.img
+                  img(src= val.img, alt="")
+              | #{val.name} 
